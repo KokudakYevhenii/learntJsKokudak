@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+    <h1>Task 1</h1>
+    <p>Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці</p>
+    <script>
+        // 0 Вводимо необхідні змінні
+
+        // Перше значченя - firstNumber
+        // Перше значення - secondNumber
+
+        // 1.Водими необхідні змінні (rentPerMonth )
+        let firstNumber = parseInt(prompt('Введіть перше число', '0'));
+        let secondNumber = parseInt(prompt('Введіть друге число', '0'))
+
+        // 2. Обчислюємо результати 
+        let sum = firstNumber + secondNumber;
+        let product = firstNumber * secondNumber;
+        let part = firstNumber / secondNumber;
+
+        // 3. Виводемо значення 
+        // document.write (`Сумма = ${rentPerYear} <br>`);
+        // document.write (`Добуток= ${rentPer2Years} <br>`);
+        // document.write (`Різниця = ${rentPer10Years} <br>`);
+
+        document.write(`
+            <table border="2px">
+                <tr>
+                    <th>Шуканий резудьтат</th>
+                    <th>Отримане значення</th>
+                </tr>
+                 <tr>
+                    <th>Сума</th>
+                    <th>${sum}</th>
+                </tr>
+                 <tr>
+                    <th>Добуток</th>
+                    <th>${product}</th>
+                </tr>
+                 <tr>
+                    <th>Різниця</th>
+                    <th>${part.toFixed(3)}</th>
+                </tr>
+            </table>
+        `)
+    </script>
+</body>
+</html>

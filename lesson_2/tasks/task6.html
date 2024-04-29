@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+<body>
+    <h1>Task 5</h1>
+    <p>
+        Умови завдання: <br>
+        З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+    </p>
+    <script>
+        // 0. Вводимо необхідні змінні
+
+        // Вартість першого товару - firstProductPrice
+        // Вартість другого товару - secondProductPrice
+        // Вартість третього товару - threeProductPrice
+        
+        // Кількість першого товару - firstProductQuontiti
+        // Кількість другого товару - secondProductQuontiti
+        // Кількість третього товару - threeProductQuontiti
+
+        // Загальна вартість - sumProduct
+        // Загальна вартість першого товару - sumProductFirst
+        // Загальна вартість другого товару - sumProductSecond
+        // Загальна вартість третього товару - sumProductThree
+
+        // 1.Водими необхідні змінні ()
+        let firstProduct = parseFloat(prompt('Введіть вартість першого товару', '0'));
+        let secondProduct = parseFloat(prompt('Введіть вартість другого товару', '0'));
+        let threeProduct = parseFloat(prompt('Введіть вартість третього товару', '0'));
+
+        let firstProductQuontiti = parseInt(prompt('Ведіть кількість першого товару', '1'));
+        let secondProductQuontiti = parseInt(prompt('Ведіть кількість другого товару', '1'));
+        let threeProductQuontiti = parseInt(prompt('Ведіть кількість третього товару', '1'));
+
+        // 2. Обчислюємо результати 
+        let sumProductFirst = firstProduct * firstProductQuontiti;
+        let sumProductSecond = secondProduct * secondProductQuontiti;
+        let sumProductThree = threeProduct * threeProductQuontiti;
+
+        let sumProduct = sumProductFirst + sumProductSecond + sumProductThree;
+
+        // 3. Виводемо значення 
+        document.write(`Загальна вартість першого товару = ${sumProductFirst.toFixed (2)} <br>`);
+        document.write(`Загальна вартість другого товару = ${sumProductSecond.toFixed (2)} <br>`);
+        document.write(`Загальна вартість третього товару = ${sumProductThree.toFixed (2)} <br>`);
+
+        document.write(`Загальна вартість = ${sumProduct.toFixed(2)}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 0</title>
+</head>
+<body>
+    <h1>Task 0</h1>
+    <p>Обчислити значення виразів: <br>
+            S1=a+12+b <br>
+            S2=a+b2a <br>
+            S3=3(a+b)c <br>
+            S4=sin⁡(a-b) <br>
+    </p>
+    <script>
+        // 0. Вводимо необхідні змінні
+
+        // Перше значченя - firstNumber
+        // Перше значення - secondNumber
+        // Третє значення - treeNumber
+
+        // 1.Водими необхідні змінні (rentPerMonth )
+        let firstNumber = parseInt(prompt('Введіть значення а'));
+        let secondNumber = parseInt(prompt('Введіть значення b'));
+        let treeNumber = parseInt(prompt('Введіть значення c'));
+
+        // 2. Обчислюємо результати 
+        let S1 = firstNumber + 12 + secondNumber;
+        let S2 = Math. sqrt (firstNumber + secondNumber / 2 * firstNumber);
+        let S3 = Math. cbrt ((firstNumber + secondNumber) * treeNumber);
+        let S4 = Math.sin (firstNumber / (secondNumber * -1))
+
+        // 3. Виводемо значення 
+        document.write (`S1 = ${S1.toFixed (2)} <br>`);
+        document.write (`S2 = ${S2.toFixed (2)} <br>`);
+        document.write (`S3 = ${S3.toFixed (2)} <br>`);
+        document.write (`S4 = ${S4.toFixed (2)}`)
+    </script>
+</body>
+</html>

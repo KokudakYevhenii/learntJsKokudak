@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+    <h1>Task 3</h1>
+    <p>
+        Умови завдання: <br>
+        Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від загальної вартості).
+    </p>
+    <script>
+        // 0. Вводимо необхідні змінні
+
+        // Кількість товару - quantitiProduct 
+        // Вартість одиниці товару - priceProduct
+        // ПДВ - PDV
+        // Загальна вартість - sum
+        // Відсотки від загальної вартості - sumPdv
+
+        // 1.Водими необхідні змінні ()
+        let quantitiProduct = parseInt(prompt('Введіть кількість товару', '1'));
+        let priceProduct = parseFloat(prompt ('Введіть вартість товару', '0'))
+        const PDV = 0.05;
+
+        // 2. Обчислюємо результати 
+        let sum = quantitiProduct * priceProduct;
+        let sumPdv = sum * PDV;
+
+        // 3. Виводемо значення 
+        document.write(`
+            <table border="2px">
+                <tr>
+                    <th>Кількість товару</th>
+                    <th>Вартість одиниці товару</th>
+                    <th>Загальна вартість</th>
+                    <th>Відсотки від загальної вартості</th>
+                </tr>
+                 <tr>
+                    <th>${quantitiProduct}</th>
+                    <th>${priceProduct}</th>
+                    <th>${sum.toFixed(2)}</th>
+                    <th>${sumPdv.toFixed(2)}</th>
+                </tr>
+            </table>
+        `)
+    </script>
+</body>
+</html>

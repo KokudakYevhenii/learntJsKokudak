@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+    <h1>Task 3</h1>
+    <p>
+        Умови завдання: <br>
+        Дано рік народження (дата: 1 січня) та поточний рік. Знайти кількість років.
+    </p>
+    <script>
+        // 0. Вводимо необхідні змінні
+
+        // Перше значченя - birthDay
+        // Друге значення - CURRENT_YEAR
+        // Третє значення - actualYear
+
+        // 1.Водими необхідні змінні ()
+        let birthDay = parseInt(prompt('Введіть рік народження', '1999'));
+        const CURRENT_YEAR = 2024;
+
+        // 2. Обчислюємо результати 
+        let actualYear = CURRENT_YEAR - birthDay;
+
+        // 3. Виводемо значення 
+        document.write(`
+            <table border="2px">
+                <tr>
+                    <th>Рік народження</th>
+                    <th>Актуальний рік</th>
+                    <th>Шуканий резудьтат</th>
+                </tr>
+                 <tr>
+                    <th>${birthDay}</th>
+                    <th>${CURRENT_YEAR}</th>
+                    <th>${actualYear}</th>
+                </tr>
+            </table>
+        `)
+    </script>
+</body>
+</html>
